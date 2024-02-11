@@ -1,0 +1,30 @@
+:root {
+    font-size: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.app {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: rgb(240, 253, 244);
+    background: linear-gradient(119deg, rgba(240, 253, 244, 1) 15%, rgba(187, 247, 208, 0.5) 97%);
+
+
+    .navbarContainer {
+        height: 8rem;
+    }
+
+    .wrapper {
+        height: calc(100vh - 8rem);
+    }
+}
