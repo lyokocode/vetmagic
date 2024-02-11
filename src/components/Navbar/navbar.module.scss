@@ -1,0 +1,113 @@
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20rem;
+
+
+    @media screen and (max-width:1280px) {
+        padding: 0 8rem;
+    }
+
+    @media screen and (max-width:1024px) {
+        padding: 0 4.8rem;
+
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 0 3.2rem;
+    }
+
+    @media screen and (max-width:640px) {
+        padding: 0 1.6rem;
+    }
+
+    @media screen and (max-width:480px) {
+        padding: 0 1rem;
+    }
+
+
+    .logo {
+        position: relative;
+        height: 7rem;
+        width: 20rem;
+
+        img {
+            border-radius: 1rem;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .lists {
+        display: flex;
+        gap: 1rem;
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+
+        li {
+
+            a {
+                color: #14532d;
+                font-size: 1.8rem;
+                font-weight: 600;
+                padding: 0.8rem 1.2rem;
+                border-radius: 1rem;
+                background: transparent;
+                transition: .5s all ease-in-out;
+
+                &:hover {
+                    background-color: #a7f3d0;
+                }
+            }
+        }
+    }
+
+    .menuBtn {
+        display: none;
+        z-index: 99;
+
+
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+    }
+
+    .responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 0;
+        background-color: #22c55e;
+        gap: 3rem;
+        transition: width 1s;
+        overflow: hidden;
+        z-index: 98;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        li {
+            a {
+                padding: 1rem 1.6rem;
+                font-size: 2.4rem;
+                color: white;
+                font-weight: 700;
+            }
+        }
+
+        &.show {
+            width: 100%;
+        }
+    }
+
+}
