@@ -34,12 +34,17 @@ export const Navbar = () => {
             </ul>
             {/* RESPONSIVE MENU */}
             <>
-                <button onClick={() => setOpen(!open)} className={styles.menuBtn}>
+
+                <button onClick={() => setOpen((prev) => !prev)} className={styles.menuBtn}>
                     {
-                        open ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />
+                        open ? <AiOutlineClose size={30} color='#fff' /> : <AiOutlineMenu size={30} />
                     }
                 </button>
-                <ul className={`${styles.responsive} ${open ? styles.show : ""}`}>
+                <ul className={`${styles.responsive} ${open ? styles.show : ""}`} onClick={(e) => e.stopPropagation(setOpen((prev) => !prev))}>
+                    <Link href="/">
+
+                        <Image width={200} height={80} src="/menuLogo.png" alt='logo' className={styles.navLogo} />
+                    </Link>
                     {
                         links && links.map((link, i) => (
                             <li key={i}>

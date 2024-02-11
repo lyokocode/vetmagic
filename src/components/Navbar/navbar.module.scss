@@ -96,6 +96,12 @@
             flex-direction: column;
         }
 
+        .navLogo {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+
         li {
             a {
                 padding: 1rem 1.6rem;
