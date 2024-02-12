@@ -1,8 +1,18 @@
-import React from 'react'
+import { Detail, Hero } from '@/components'
 
 const Blog = () => {
     return (
-        <div>Blog</div>
+        <section>
+            <Hero
+                src="/hero3.jpg"
+                title="Vet Magic"
+            />
+            <Detail
+                title="Bloglarımız"
+                description="Blog yazılarımız"
+
+            />
+        </section>
     )
 }
 

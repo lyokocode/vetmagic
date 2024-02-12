@@ -1,8 +1,19 @@
+import { Detail, Hero } from '@/components'
 import React from 'react'
 
 const Hakkimizda = () => {
     return (
-        <div>Hakkimizda</div>
+        <section>
+            <Hero
+                src="/hero2.jpg"
+                title="Vet Magic"
+            />
+            <Detail
+                title="Hakkımızda"
+                description="Magic Veteriner Kliniği"
+
+            />
+        </section>
     )
 }
 

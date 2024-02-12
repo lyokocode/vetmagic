@@ -1,0 +1,38 @@
+.detail {
+    margin: 0rem auto;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Montserrat, 'Open Sans' !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 7rem;
+
+    .info {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.6rem;
+        color: #166534;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .hr {
+            height: 0.1rem;
+            width: 5rem;
+            background-color: #166534;
+        }
+
+
+    }
+
+    .text {
+        color: #052e16;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        font-family: Montserrat, 'Open Sans' !important;
+    }
+}
