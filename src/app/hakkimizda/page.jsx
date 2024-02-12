@@ -1,5 +1,4 @@
-import { Detail, Hero } from '@/components'
-import React from 'react'
+import { Card, Detail, Hero } from '@/components'
 
 const Hakkimizda = () => {
     return (
@@ -13,6 +12,8 @@ const Hakkimizda = () => {
                 description="Magic Veteriner Kliniği"
 
             />
+            <Card />
+
         </section>
     )
 }

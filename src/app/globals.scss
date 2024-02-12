@@ -14,11 +14,10 @@
 }
 
 .app {
-    min-width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     background: rgb(240, 253, 244);
     background: linear-gradient(119deg, rgba(240, 253, 244, 1) 15%, rgba(187, 247, 208, 0.5) 97%);
-
 
     .navbarContainer {
         height: 8rem;
@@ -26,6 +25,7 @@
 
     .wrapper {
         min-height: calc(100vh - 8rem);
+        width: 100%;
     }
 }
 

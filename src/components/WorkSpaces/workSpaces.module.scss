@@ -1,0 +1,114 @@
+.workSpaces {
+    height: 100%;
+    width: 100%;
+    padding: 0 10rem;
+    position: relative;
+    overflow-x: hidden;
+
+
+    .bgImage {
+        position: absolute;
+        opacity: 0.5;
+        width: 100%;
+        max-width: 90vw;
+        height: 100%;
+        z-index: -99;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width:930px) {
+        padding: 0 2rem;
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 0 1rem;
+    }
+
+    .header {
+        padding: 10rem 0;
+        display: flex;
+        gap: 2rem;
+
+        @media screen and (max-width:768px) {
+            padding: 10rem 1rem;
+        }
+
+        .left {
+            flex: 1;
+
+
+
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                h1 {
+                    font-size: 1.8rem;
+                    line-height: 1.6rem;
+                    font-weight: 600;
+                    color: #166534;
+                    position: relative;
+                    width: max-content;
+
+                }
+
+                .hr {
+                    background-color: #166534;
+                    left: calc(100% + 2rem);
+                    // position: absolute;
+                    z-index: 99;
+                    top: 50%;
+                    width: 50px;
+                    height: 1px;
+                }
+            }
+
+            h2 {
+                font-size: 3.6rem;
+                margin: 1rem 0 0;
+                color: black;
+            }
+        }
+
+        .center {
+            flex: 3;
+            color: black;
+            font-size: 1.6rem;
+            font-family: "Open Sans";
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+            p {
+                margin: 0 0 2rem;
+            }
+        }
+
+        .right {
+            flex: 1;
+            background-color: #166534;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: max-content;
+            width: max-content;
+            padding: 14px 10px;
+            max-width: 16rem;
+            color: white;
+            font-size: 1.4rem;
+            text-wrap: nowrap;
+            opacity: 1;
+
+            @media screen and (max-width:950px) {
+                display: none;
+            }
+        }
+    }
+}

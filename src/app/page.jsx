@@ -1,11 +1,11 @@
 import styles from "./page.module.scss"
-import { Detail, Hero } from "@/components"
+import { Card, Detail, Hero, WorkSpaces } from "@/components"
 
 
 const HomePage = async () => {
 
     return (
-        <div className={styles.homePage}>
+        <section >
             <Hero
                 src="/hero1.jpg"
                 title="Vet Magic"
@@ -17,11 +17,15 @@ const HomePage = async () => {
             />
 
             <div className={styles.about}>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, pariatur nam totam tenetur ducimus libero quidem nulla adipisci qui voluptate?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem perspiciatis dolore doloremque possimus sapiente illum, maxime nam? Quisquam cum rerum assumenda enim laudantium aperiam harum in. Velit, libero voluptatibus.</p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium distinctio necessitatibus deserunt ullam temporibus officia tempore cum ad quam blanditiis molestias, nihil accusamus delectus expedita incidunt nulla perspiciatis hic in voluptas error aliquid! Perferendis, ipsum corporis laborum aut dicta ab?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos rerum fugit aut cupiditate facilis. Mollitia quasi nulla nihil ab debitis.
             </div>
-        </div>
+
+            <Card />
+
+            <WorkSpaces />
+        </section>
     )
 }
 

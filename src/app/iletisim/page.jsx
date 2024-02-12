@@ -1,5 +1,4 @@
 import { Detail, Hero } from '@/components'
-import React from 'react'
 
 const Iletisim = () => {
     return (

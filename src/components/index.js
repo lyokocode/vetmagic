@@ -1,3 +1,7 @@
 export { Navbar } from "./Navbar"
 export { Detail } from "./Detail"
 export { Hero } from "./Hero"
+export { Card } from "./Card"
+export { WorkSpaces } from "./WorkSpaces"
+export { WorkList } from "./WorkList"
+export { WorkCard } from "./WorkCard"
