@@ -41,28 +41,5 @@ export const categories = [
         image: "/category2.jpg",
         slug: "asi-takvimi"
     },
-    {
-        id: 3,
-        title: "Aşı takvimi",
-        description: "Aşı takvimi neden önemlidir? Aşı takvimini neden takip etmeliyiz?",
-        icon: "/categoryIcon2.png",
-        image: "/category2.jpg",
-        slug: "asi-takvimi"
-    },
-    {
-        id: 3,
-        title: "Aşı takvimi",
-        description: "Aşı takvimi neden önemlidir? Aşı takvimini neden takip etmeliyiz?",
-        icon: "/categoryIcon2.png",
-        image: "/category2.jpg",
-        slug: "asi-takvimi"
-    },
-    {
-        id: 3,
-        title: "Aşı takvimi",
-        description: "Aşı takvimi neden önemlidir? Aşı takvimini neden takip etmeliyiz?",
-        icon: "/categoryIcon2.png",
-        image: "/category2.jpg",
-        slug: "asi-takvimi"
-    },
+
 ]

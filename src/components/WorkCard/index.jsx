@@ -3,17 +3,17 @@ import styles from "./workCard.module.scss"
 import Image from "next/image"
 
 export const WorkCard = ({ category }) => {
-    console.log(category)
     return (
         <>
-            {category && category.icon ? (
+            {category && (
                 <article className={styles.workCard}>
                     <div className={styles.workInfo}>
                         {
                             category.icon && (
                                 <div className={styles.iconContainer}>
                                     <Image
-                                        fill={true}
+                                        fill
+                                        sizes="100%"
                                         src={category.icon}
                                         alt={`${category.title} icon`}
                                         className={styles.icon}
@@ -27,7 +27,9 @@ export const WorkCard = ({ category }) => {
                     <div className={styles.animation}>
                         {
                             category.image && (
-                                <img
+                                <Image
+                                    sizes="100%"
+                                    fill
                                     src={category.image}
                                     alt={`${category.title} image`}
                                     className={styles.workImage}
@@ -39,7 +41,7 @@ export const WorkCard = ({ category }) => {
                         </Link>
                     </div>
                 </article>
-            ) : ("loading")}
+            )}
         </>
     )
 }

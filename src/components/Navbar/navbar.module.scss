@@ -1,33 +1,49 @@
 .navbar {
+    background-color: var(--bg);
     width: 100%;
-    height: 100%;
+    height: 8rem;
+    padding: 0 10rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20rem;
 
-
-    @media screen and (max-width:1280px) {
+    @media (max-width: 1536px) {
         padding: 0 8rem;
     }
 
-    @media screen and (max-width:1024px) {
-        padding: 0 4.8rem;
-
+    @media (max-width: 1366px) {
+        padding: 0 7rem;
     }
 
-    @media screen and (max-width:768px) {
-        padding: 0 3.2rem;
+    @media (max-width: 1280px) {
+        padding: 0 6rem;
     }
 
-    @media screen and (max-width:640px) {
-        padding: 0 1.6rem;
+    @media (max-width: 1024px) {
+        padding: 0 5rem;
     }
 
-    @media screen and (max-width:480px) {
-        padding: 0 1rem;
-    }
 
+
+    // @media (max-width: 640px) {
+    //     width: 475px;
+    //     padding: 0 3rem;
+
+    // }
+
+    // @media (max-width: 475px) {
+    //     width: 380px;
+    //     padding: 0 2rem;
+
+    // }
+
+    // @media (max-width: 380px) {
+    //     width: 100%;
+    //     padding: 0 1rem;
+    // }
 
     .logo {
         position: relative;
@@ -41,79 +57,5 @@
         }
     }
 
-    .lists {
-        display: flex;
-        gap: 1rem;
-
-        @media screen and (max-width:768px) {
-            display: none;
-        }
-
-        li {
-
-            a {
-                color: #14532d;
-                font-size: 1.8rem;
-                font-weight: 600;
-                padding: 0.8rem 1.2rem;
-                border-radius: 1rem;
-                background: transparent;
-                transition: .5s all ease-in-out;
-
-                &:hover {
-                    background-color: #a7f3d0;
-                }
-            }
-        }
-    }
-
-    .menuBtn {
-        display: none;
-        z-index: 99;
-
-
-        @media screen and (max-width:768px) {
-            display: block;
-        }
-    }
-
-    .responsive {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        width: 0;
-        background-color: #22c55e;
-        gap: 3rem;
-        transition: width 1s;
-        overflow: hidden;
-        z-index: 98;
-
-        @media screen and (max-width:768px) {
-            flex-direction: column;
-        }
-
-        .navLogo {
-            position: absolute;
-            top: 5%;
-            left: 10%;
-        }
-
-        li {
-            a {
-                padding: 1rem 1.6rem;
-                font-size: 2.4rem;
-                color: white;
-                font-weight: 700;
-            }
-        }
-
-        &.show {
-            width: 100%;
-        }
-    }
 
 }

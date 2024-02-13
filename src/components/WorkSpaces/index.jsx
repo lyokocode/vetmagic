@@ -5,7 +5,9 @@ import { WorkList } from "@/components"
 export const WorkSpaces = () => {
     return (
         <div className={styles.workSpaces}>
-
+            <div className={styles.bgImage}>
+                <Image fill src="/background1.jpg" alt='bg image' />
+            </div>
             <header className={styles.header}>
                 <div className={styles.left}>
                     <div className={styles.title}>

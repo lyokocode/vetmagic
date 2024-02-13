@@ -1,0 +1,30 @@
+.navLink {
+    min-width: 10rem;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--text-dark);
+    background: transparent;
+    transition: .5s all ease-in-out;
+    width: max-content;
+
+    &:hover {
+        background-color: var(--bg-dark);
+    }
+
+    &.active {
+        background-color: var(--bg-dark);
+    }
+
+    @media (max-width: 768px) {
+        color: white;
+        font-weight: 600;
+
+        &.active {
+            background-color: var(--bg-soft);
+        }
+    }
+}

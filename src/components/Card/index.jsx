@@ -4,7 +4,6 @@ import Image from "next/image"
 
 
 export const Card = () => {
-    console.log(cards)
     return (
         <article className={styles.cardContainer}>
             {cards && cards.map(card => (
@@ -12,7 +11,7 @@ export const Card = () => {
                     className={styles.card}
                 >
                     <div className={styles.imageContainer}>
-                        <Image fill className={styles.categoryImage} src={card.image} alt="card Image" />
+                        <Image sizes="100%" fill className={styles.categoryImage} src={card.image} alt="card Image" />
 
                     </div>
                     <div className={styles.info}>
