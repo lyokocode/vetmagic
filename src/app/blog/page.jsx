@@ -1,4 +1,6 @@
 import { Detail, Hero } from '@/components'
+import { PostCard } from '@/components'
+import styles from "./blog.module.scss"
 
 const Blog = () => {
     return (
@@ -12,6 +14,20 @@ const Blog = () => {
                 description="Blog yazılarımız"
 
             />
+            <div className={styles.blogContainer}>
+                <div className={styles.post}>
+                    <PostCard />
+                </div>
+                <div className={styles.post}>
+                    <PostCard />
+                </div>
+                <div className={styles.post}>
+                    <PostCard />
+                </div>
+                <div className={styles.post}>
+                    <PostCard />
+                </div>
+            </div>
         </section>
     )
 }

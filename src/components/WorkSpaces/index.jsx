@@ -6,7 +6,7 @@ export const WorkSpaces = () => {
     return (
         <div className={styles.workSpaces}>
             <div className={styles.bgImage}>
-                <Image fill src="/background1.jpg" alt='bg image' />
+                <Image fill sizes='100%' src="/background1.jpg" alt='bg image' />
             </div>
             <header className={styles.header}>
                 <div className={styles.left}>

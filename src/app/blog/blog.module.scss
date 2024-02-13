@@ -1,0 +1,19 @@
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    .post {
+        width: 30%;
+
+        @media screen and (max-width: 1280px) {
+            width: 45%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
