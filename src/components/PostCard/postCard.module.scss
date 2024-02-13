@@ -12,6 +12,11 @@
             height: 40rem;
             position: relative;
 
+            @media screen and (max-width: 768px) {
+                height: 30rem;
+
+            }
+
             img {
                 object-fit: cover;
             }
@@ -25,6 +30,7 @@
     }
 
     .bottom {
+        padding: 0 1rem;
 
         .title {
             width: 90%;

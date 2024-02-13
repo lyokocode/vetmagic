@@ -9,8 +9,11 @@
     margin-bottom: 7rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
     p {
         margin: 0 0 2rem;
-
     }
 }
