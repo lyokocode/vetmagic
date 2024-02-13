@@ -10,6 +10,7 @@
 }
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -21,19 +22,17 @@
 }
 
 body {
+    max-width: 100vw;
+    min-height: 100vh;
     background: var(--bg);
     background: var(--bg-gradient);
-
 }
 
 .app {
-    min-width: 100vh;
+    max-width: 100vw;
     min-height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    background: var(--bg);
+    background: var(--bg-gradient);
 
 
     .wrapper {
@@ -50,24 +49,3 @@ button {
 a {
     color: inherit;
 }
-
-// /* width */
-// ::-webkit-scrollbar {
-//     width: 1rem;
-// }
-
-// /* Track */
-// ::-webkit-scrollbar-track {
-//     background: var(--bg);
-// }
-
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//     background: var(--bg-dark);
-//     border-radius: 1rem;
-// }
-
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//     background: var(--bg-soft);
-// }
