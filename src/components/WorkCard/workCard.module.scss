@@ -1,9 +1,18 @@
 .workCard {
     position: relative;
-    height: 30rem;
-    max-width: 32rem;
-    min-width: 32rem;
+    height: 40rem;
+    width: 30%;
     border: 0.1rem solid #94a3b8;
+
+    @media screen and (max-width: 1280px) {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 30rem;
+
+    }
 
     .workInfo {
         display: flex;
@@ -14,8 +23,6 @@
         min-height: 25rem;
         gap: 1.6rem;
         padding: 1.4rem;
-
-
 
 
         .iconContainer {

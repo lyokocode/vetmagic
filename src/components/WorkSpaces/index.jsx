@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from "./workSpaces.module.scss"
 import Image from 'next/image'
 import { WorkList } from "@/components"
+
 export const WorkSpaces = () => {
     return (
         <div className={styles.workSpaces}>

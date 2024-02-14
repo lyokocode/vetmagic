@@ -1,10 +1,12 @@
 .workSpaces {
     height: 100%;
-    width: 100%;
-    padding: 0 10rem;
+    width: 80%;
+    margin: 0 auto;
     position: relative;
-    overflow-x: hidden;
 
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
 
     .bgImage {
         position: absolute;
@@ -12,6 +14,8 @@
         width: 100%;
         height: 100%;
         z-index: -99;
+        left: 0;
+        top: 0;
 
         img {
             object-fit: cover;
@@ -29,7 +33,7 @@
     }
 
     .header {
-        padding: 10rem 0;
+        padding: 10rem 2rem;
         display: flex;
         gap: 2rem;
 
@@ -39,8 +43,6 @@
 
         .left {
             flex: 1;
-
-
 
             .title {
                 display: flex;
@@ -60,7 +62,6 @@
                 .hr {
                     background-color: #166534;
                     left: calc(100% + 2rem);
-                    // position: absolute;
                     z-index: 99;
                     top: 50%;
                     width: 50px;

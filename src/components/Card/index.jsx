@@ -2,7 +2,6 @@ import { cards } from "@/mockdata/data"
 import styles from "./card.module.scss"
 import Image from "next/image"
 
-
 export const Card = () => {
     return (
         <article className={styles.cardContainer}>
@@ -15,7 +14,6 @@ export const Card = () => {
 
                     </div>
                     <div className={styles.info}>
-                        <h1 className={styles.index}>{`0${card.id}`}</h1>
                         <h2 className={styles.title}>{card.title}</h2>
                     </div>
                 </div>
