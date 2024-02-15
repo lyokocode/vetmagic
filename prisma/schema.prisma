@@ -10,9 +10,36 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id          Int      @id @default(autoincrement())
+  fullName    String
+  image       String
+  description String
+  slug        String   @unique
+  blogs       Blog[]
+  createdAt   DateTime @default(now())
+}
+
 model Category {
   id          Int      @id @default(autoincrement())
   title       String
   description String
+  image       String
+  icon        String
+  slug        String   @unique
+  blogs       Blog[]
   createdAt   DateTime @default(now())
+}
+
+model Blog {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  title       String
+  description String
+  image       String
+  slug        String   @unique
+  category    Category @relation(fields: [catSlug], references: [slug])
+  user        User     @relation(fields: [userSlug], references: [slug])
+  catSlug     String
+  userSlug    String
 }

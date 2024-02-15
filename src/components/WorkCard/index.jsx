@@ -10,15 +10,13 @@ export const WorkCard = ({ category }) => {
                     <div className={styles.workInfo}>
                         {
                             category.icon && (
-                                <div className={styles.iconContainer}>
-                                    <Image
-                                        fill
-                                        sizes="100%"
-                                        src={category.icon}
-                                        alt={`${category.title} icon`}
-                                        className={styles.icon}
-                                    />
-                                </div>
+                                <Image
+                                    width={100}
+                                    height={100}
+                                    src={category.icon}
+                                    alt={`${category.title} icon`}
+                                    className={styles.icon}
+                                />
                             )
                         }
                         <h2 className={styles.title}>{category.title}</h2>

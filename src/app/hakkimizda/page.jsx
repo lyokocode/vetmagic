@@ -12,7 +12,6 @@ const Hakkimizda = () => {
                 description="Magic Veteriner Kliniği"
 
             />
-            <Card />
 
         </section>
     )
