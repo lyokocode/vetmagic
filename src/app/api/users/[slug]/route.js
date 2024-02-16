@@ -44,7 +44,7 @@ export const DELETE = async (req, { params }) => {
     try {
         // URL'den slug değerini alın
         const { slug } = params;
-
+        console.log(slug)
         // Veritabanında slug'a göre user'ı bulun
         const user = await prisma.user.findUnique({
             where: {
