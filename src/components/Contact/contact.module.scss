@@ -1,0 +1,52 @@
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    padding: 1rem;
+
+    margin: 0 auto;
+
+    .link {
+        padding: 1rem 1.6rem;
+        width: 30%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .contact {
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .info {
+            font-size: 1.6rem;
+            color: #565656;
+            text-align: center;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            span {
+                font-size: 1.4rem;
+                color: red;
+                text-transform: capitalize;
+            }
+
+            svg {
+                color: red;
+                font-size: 4rem;
+            }
+        }
+
+    }
+}

@@ -1,8 +1,9 @@
-import { Detail, Hero } from '@/components'
+import { Contact, Detail, Hero, Map } from '@/components'
+import styles from "./iletisim.module.scss"
 
 const Iletisim = () => {
     return (
-        <section>
+        <>
             <Hero
                 src="/hero5.jpg"
                 title="Vet Magic"
@@ -12,7 +13,21 @@ const Iletisim = () => {
                 description="Bizimle İletişime Geçin"
 
             />
-        </section>
+            <section className={styles.contactContainer}>
+                <div className={styles.text}>
+                    <p>
+                        Hizmetlerimizin kapsamı ve çalışma şartları hakkında bilgi almayı istemeniz
+                        <br />
+                        halinde, sitemizdeki iletişim kanallarından herhangi birini kullanarak
+                        <br />
+                        bizlerle iletişime geçebilirsiniz.
+                    </p>
+                </div>
+                <Map />
+                <Contact />
+            </section>
+
+        </>
     )
 }
 

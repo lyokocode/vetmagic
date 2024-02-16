@@ -6,4 +6,7 @@ export { WorkSpaces } from "./WorkSpaces"
 export { WorkList } from "./WorkList"
 export { WorkCard } from "./WorkCard"
 export { PostCard } from "./PostCard"
+export { Map } from "./Map"
+export { Contact } from "./Contact"
+
 export { Footer } from "./Footer"
