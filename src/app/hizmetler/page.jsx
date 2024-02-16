@@ -1,4 +1,4 @@
-import { Card, Detail, Hero } from '@/components'
+import { Detail, Hero, WorkList } from '@/components'
 
 const Hizmetler = () => {
     return (
@@ -12,7 +12,7 @@ const Hizmetler = () => {
                 description="Öne çıkan hizmetlerimiz"
 
             />
-            <Card />
+            <WorkList />
 
         </section>
     )

@@ -4,8 +4,12 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1280px) {
+        width: 90%;
+    }
 
     .post {
         width: 30%;
