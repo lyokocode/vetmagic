@@ -18,6 +18,12 @@ export const Contact = () => {
                 <span className={styles.info}>Mesai saatleri içerisinde size dönüş yapılacaktır</span>
                 <a href="mailto:vetmagic@gmail.com"><span>mail gönder</span> <FaLocationArrow size={30} color="crimson" />  </a>
             </div>
+            <div className={styles.link}>
+                <MdMailOutline size={40} color="crimson" />
+                <span className={styles.contact}> vetmagic@gmail.com</span>
+                <span className={styles.info}>Mesai saatleri içerisinde size dönüş yapılacaktır</span>
+                <a href="mailto:vetmagic@gmail.com"><span>mail gönder</span> <FaLocationArrow size={30} color="crimson" />  </a>
+            </div>
 
         </div>
     )
