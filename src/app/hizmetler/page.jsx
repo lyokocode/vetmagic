@@ -10,10 +10,8 @@ const Hizmetler = () => {
             <Detail
                 title="Hizmetlerimiz"
                 description="Öne çıkan hizmetlerimiz"
-
             />
             <WorkList />
-
         </section>
     )
 }
